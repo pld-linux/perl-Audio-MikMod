@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" - needs working audio device
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Audio
-%define		pnam	MikMod
+%define	pdir	Audio
+%define	pnam	MikMod
 Summary:	Audio::MikMod Perl module - extension for libmikmod
 Summary(pl):	Modu³ Perla Audio::MikMod - rozszezenie do libmikmod
 Name:		perl-Audio-MikMod
