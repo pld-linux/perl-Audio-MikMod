@@ -13,6 +13,7 @@ Release:	5
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	31c8f3dfe79feebcef803a7683596ae4
 BuildRequires:	perl-Time-HiRes >= 1.20
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
