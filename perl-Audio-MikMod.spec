@@ -9,7 +9,7 @@ Summary:	Audio::MikMod Perl module - extension for libmikmod
 Summary(pl):	Modu³ Perla Audio::MikMod - rozszezenie do libmikmod
 Name:		perl-Audio-MikMod
 Version:	0.5
-Release:	3
+Release:	4
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
