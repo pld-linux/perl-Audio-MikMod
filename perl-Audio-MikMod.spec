@@ -1,6 +1,7 @@
 #
 # Conditional build:
 # _with_tests - perform "make test" - needs working audio device
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Audio
 %define		pnam	MikMod
@@ -37,7 +38,7 @@ AMF, DSM, IMF, GDM i STX. Dodatkowo umo¿liwia obs³ugê sampli WAV.
 perl Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
 
-%{?_with_test:%{__make} test}
+%{?_with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
