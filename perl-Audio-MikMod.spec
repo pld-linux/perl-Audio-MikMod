@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _with_tests - perform "make test" - needs working audio device
+%bcond_with	tests	# perform "make test" - needs working audio device
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Audio
@@ -40,7 +40,7 @@ AMF, DSM, IMF, GDM i STX. Dodatkowo umo¿liwia obs³ugê sampli WAV.
 	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
