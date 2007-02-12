@@ -6,7 +6,7 @@
 %define		pdir	Audio
 %define		pnam	MikMod
 Summary:	Audio::MikMod Perl module - extension for libmikmod
-Summary(pl):	Modu³ Perla Audio::MikMod - rozszezenie do libmikmod
+Summary(pl.UTF-8):   ModuÅ‚ Perla Audio::MikMod - rozszezenie do libmikmod
 Name:		perl-Audio-MikMod
 Version:	0.5
 Release:	7
@@ -26,10 +26,10 @@ MOD, IT, XM, S3M, MTM, 669, STM, ULT, FAR, MED, AMF, DSM, IMF, GDM,
 and STX tracker files. In addition, manipulation of WAV samples is
 supported.
 
-%description -l pl
-Ten modu³ udostêpnia interfejs do biblioteki libmikmod w celu
-odtwarzania plików MOD, IT, XM, S3M, MTM, 669, STM, ULT, FAR, MED,
-AMF, DSM, IMF, GDM i STX. Dodatkowo umo¿liwia obs³ugê sampli WAV.
+%description -l pl.UTF-8
+Ten moduÅ‚ udostÄ™pnia interfejs do biblioteki libmikmod w celu
+odtwarzania plikÃ³w MOD, IT, XM, S3M, MTM, 669, STM, ULT, FAR, MED,
+AMF, DSM, IMF, GDM i STX. Dodatkowo umoÅ¼liwia obsÅ‚ugÄ™ sampli WAV.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
