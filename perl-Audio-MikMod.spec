@@ -38,6 +38,7 @@ AMF, DSM, IMF, GDM i STX. Dodatkowo umożliwia obsługę sampli WAV.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
