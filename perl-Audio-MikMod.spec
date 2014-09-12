@@ -60,7 +60,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/Audio/MikMod.pm
 %dir %{perl_vendorarch}/auto/Audio/MikMod
-%{perl_vendorarch}/auto/Audio/MikMod/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Audio/MikMod/*.so
 %{_mandir}/man3/*
 %dir %{_examplesdir}/%{name}-%{version}
