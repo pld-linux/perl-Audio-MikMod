@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_with	tests	# perform "make test" - needs working audio device
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Audio
 %define		pnam	MikMod
+%include	/usr/lib/rpm/macros.perl
 Summary:	Audio::MikMod Perl module - extension for libmikmod
 Summary(pl.UTF-8):	Moduł Perla Audio::MikMod - rozszezenie do libmikmod
 Name:		perl-Audio-MikMod
@@ -15,9 +15,10 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	31c8f3dfe79feebcef803a7683596ae4
+URL:		http://search.cpan.org/dist/Audio-MikMod/
+BuildRequires:	libmikmod-devel >= 3.1.7
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	libmikmod-devel >= 3.1.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -50,7 +51,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install demo/{*pm,player*} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p demo/{*pm,player*} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
