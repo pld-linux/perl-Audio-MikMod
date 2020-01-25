@@ -4,7 +4,6 @@
 
 %define		pdir	Audio
 %define		pnam	MikMod
-%include	/usr/lib/rpm/macros.perl
 Summary:	Audio::MikMod Perl module - extension for libmikmod
 Summary(pl.UTF-8):	Moduł Perla Audio::MikMod - rozszezenie do libmikmod
 Name:		perl-Audio-MikMod
